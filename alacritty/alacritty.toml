@@ -1,0 +1,36 @@
+[font]
+size = 10.0
+
+[font.bold]
+family = "Cascadia Code PL"
+style = "Bold"
+
+[font.bold_italic]
+family = "Cascadia Code PL"
+style = "Bold Italic"
+
+[font.italic]
+family = "Cascadia Code PL"
+style = "Italic"
+
+[font.normal]
+family = "Cascadia Code PL"
+style = "Regular"
+
+[window]
+padding = { x = 12, y = 12 }
+opacity = 0.8
+
+[colors.primary]
+background = "#11131a"
+foreground = "#bcc8c9"
+
+[colors.normal]
+black = "#343434"
+red = "#f06b40"
+green = "#5fecb4"
+yellow = "#e7d754"
+blue = "#4ada83"
+magenta = "#f97bb2"
+cyan = "#54d3e7"
+white = "#f8b928"
