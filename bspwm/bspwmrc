@@ -2,14 +2,10 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd & 
 
-~/.config/polybar/launch.sh &
-
-nitrogen --restore &
+python3 ~/.config/scripts/initialize.py
 
 pkill picom
 	picom -f --daemon --config $HOME/.config/picom.conf &
-
-alacritty &
 
 bspc monitor -d o o o o o o o o o
 
@@ -23,7 +19,8 @@ bspc config borderless_monocle   false
 bspc config gapless_monocle      false
 
 bspc rule -a Gimp desktop='^8' state=floating follow=on
-bspc rule -a firefox desktop='^2'
+bspc rule -a firefox-developer-edition desktop='^2'
+bspc rule -a Chromium desktop='^2'
 bspc rule -a Thunar desktop='^3'
 bspc rule -a Lxappearance state=floating
 bspc rule -a mplayer2 state=floating
